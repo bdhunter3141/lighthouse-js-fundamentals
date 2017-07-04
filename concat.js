@@ -1,5 +1,8 @@
 function concat (firstArray, secondArray) {
-  return firstArray.concat(secondArray);
+  for (var i = 0; i < secondArray.length; i++) {
+    firstArray.push(secondArray[i]);
+  }
+  return firstArray;
 }
 
 console.log(concat([ 1, 2, 3 ], [ 4, 5, 6 ]), "=?", [ 1, 2, 3, 4, 5, 6 ]);
